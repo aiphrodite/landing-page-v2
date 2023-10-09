@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Simple',
-  description: 'Page description',
+  title: 'aiphrodite.ai - AI-based ad testing',
+  description: 'testing ads, the smarter way',
 }
 
 import Hero from '@/components/hero'
@@ -15,8 +15,8 @@ export default function Home() {
       <Hero />
       <Features />
       <FeaturesBlocks />
-      <Testimonials />
-      <Newsletter />
+      {/* <Testimonials /> */}
+      {/* <Newsletter /> */}
     </>
   )
 }

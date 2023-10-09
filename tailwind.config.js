@@ -8,6 +8,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        purple: {
+          primary: '#794B93',
+          hover: '#906AA6',
+          dark: '#4C2A4C',
+          light: '#E6E0F2',
+          white: '#F7F5F9',
+        },
+        orange: {
+          primary: '#FFA561',
+          dark: '#FF745D',
+          light: '#fdb7a1',
+          white: '#fbf0ee',
+        },
+        monotone: {
+          black: '#1D1A1E',
+          gray: '#CBC8CD',
+          white: '#FAFAFA',
+        },
         gray: {
           100: '#FBFBFB',
           200: '#EAEAEA',
