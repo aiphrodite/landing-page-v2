@@ -112,7 +112,7 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Neuroscienctific</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Neuroscientific</h4>
               <p className="text-gray-600 text-center">aiphrodite is built on the latest AI and neuroscience research.</p>
             </div>
 
