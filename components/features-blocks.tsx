@@ -24,6 +24,23 @@ export default function FeaturesBlocks() {
                 <g fill="none" fillRule="evenodd">
                   <rect className="fill-current text-purple-primary" width="64" height="64" rx="32" />
                   <g strokeWidth="2">
+                    <path className="stroke-current text-purple-light" d="M34.743 29.714L36.57 32 27.43 43.429H24M24 20.571h3.429l1.828 2.286" />
+                    <path className="stroke-current text-white" strokeLinecap="square" d="M34.743 41.143l1.828 2.286H40M40 20.571h-3.429L27.43 32l1.828 2.286" />
+                    <path className="stroke-current text-purple-light" d="M36.571 32H40" />
+                    <path className="stroke-current text-white" d="M24 32h3.429" strokeLinecap="square" />
+                  </g>
+                </g>
+              </svg>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Explainable</h4>
+              <p className="text-gray-600 text-center">learn what exactly resonates with your target audience.</p>
+            </div>
+
+            {/* 2nd item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fillRule="evenodd">
+                  <rect className="fill-current text-purple-primary" width="64" height="64" rx="32" />
+                  <g strokeWidth="2">
                     <path className="stroke-current text-purple-light" d="M34.514 35.429l2.057 2.285h8M20.571 26.286h5.715l2.057 2.285" />
                     <path className="stroke-current text-white" d="M20.571 37.714h5.715L36.57 26.286h8" />
                     <path className="stroke-current text-purple-light" strokeLinecap="square" d="M41.143 34.286l3.428 3.428-3.428 3.429" />
@@ -35,7 +52,7 @@ export default function FeaturesBlocks() {
               <p className="text-gray-600 text-center">aiphrodite skips weeks of ad testing by simulating personas with AI.</p>
             </div>
 
-            {/* 2nd item */}
+            {/* 3rd item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
               <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
@@ -49,23 +66,6 @@ export default function FeaturesBlocks() {
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Save Money</h4>
               <p className="text-gray-600 text-center">stop wasting money on those "trust me bro" platforms.</p>
-            </div>
-
-            {/* 3rd item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none" fillRule="evenodd">
-                  <rect className="fill-current text-purple-primary" width="64" height="64" rx="32" />
-                  <g strokeWidth="2">
-                    <path className="stroke-current text-purple-light" d="M34.743 29.714L36.57 32 27.43 43.429H24M24 20.571h3.429l1.828 2.286" />
-                    <path className="stroke-current text-white" strokeLinecap="square" d="M34.743 41.143l1.828 2.286H40M40 20.571h-3.429L27.43 32l1.828 2.286" />
-                    <path className="stroke-current text-purple-light" d="M36.571 32H40" />
-                    <path className="stroke-current text-white" d="M24 32h3.429" strokeLinecap="square" />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Explainable</h4>
-              <p className="text-gray-600 text-center">learn what exactly resonates with your target audience.</p>
             </div>
 
             {/* 4th item */}

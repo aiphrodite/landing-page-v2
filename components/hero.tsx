@@ -33,7 +33,7 @@ export default function Hero() {
               say goodbye to A/B testing with <span style={{backgroundImage: 'linear-gradient(135deg, #FF745D, #794B93)', backgroundClip: 'text', WebkitBackgroundClip: 'text', color: 'transparent'}}>aiphrodite.ai</span>
             </h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">aiphrodite brings the power of AI to social media marketing managers, analysts, and their teams. aiphrodite instantly shows you how your audience will react to an ad, before it is published. no need for A/B testing.</p>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">aiphrodite brings the power of AI to marketing managers, analysts, and their teams. instantly see how your audience will react to an ad, before it is published. no more need for testing, aiphrodite helps you get back to Creating Creativity!</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
                   <a className="btn text-white bg-purple-primary hover:bg-purple-hover w-full mb-4 sm:w-auto sm:mb-0" href="https://b6wjboul8hp.typeform.com/to/FPnisdz6">Join The Waitlist</a>
@@ -51,7 +51,7 @@ export default function Hero() {
             thumbWidth={768}
             thumbHeight={432}
             thumbAlt="Modal video thumbnail"
-            video="/videos/video.mp4"
+            video="https://youtu.be/cfVrHZ2cwvg"
             videoWidth={1920}
             videoHeight={1080} />
 
