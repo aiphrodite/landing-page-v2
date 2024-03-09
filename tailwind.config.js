@@ -78,7 +78,7 @@ module.exports = {
         '1/1': '100%',
       },
       fontFamily: {
-        inter: ['var(--font-inter)', 'sans-serif'],
+        inter: ['var(--font-inter)', 'sans-serif']
       },
       fontSize: {
         xs: '0.75rem',
@@ -147,5 +147,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
   ],
 };
