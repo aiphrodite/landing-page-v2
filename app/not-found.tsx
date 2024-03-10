@@ -25,9 +25,9 @@ export default function NotFound() {
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           <div className="max-w-3xl mx-auto text-center">
             {/* 404 content */}
-            <h1 className="h1 mb-4">Oh, No! You stumbled upon a rarity</h1>
+            <h1 className="h1 mb-4">Oops... looks like we broke something</h1>
             <div className="mt-8">
-              <Link href="/" className="btn text-white bg-blue-600 hover:bg-blue-700">Go back home</Link>
+              <Link href="/" className="btn text-white bg-aip-purple-dark hover:bg-aip-purple-royal">Go back home</Link>
             </div>
           </div>
         </div>
