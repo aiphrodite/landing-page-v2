@@ -14,7 +14,7 @@ export default function Header() {
   // detect whether user has scrolled the page down by 10px
   const scrollHandler = () => {
     window.pageYOffset > 10 ? setTop(false) : setTop(true)
-  }  
+  }
 
   useEffect(() => {
     scrollHandler()
@@ -34,6 +34,43 @@ export default function Header() {
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
+
+            {/* Desktop menu links */}
+            <ul className="flex grow justify-end flex-wrap items-center">
+              <li>
+                <Link href="/" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Home</Link>
+              </li>
+              <li>
+                <Link href="/pricing" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Pricing</Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">About us</Link>
+              </li>
+              {/* <li>
+                <Link href="/tutorials" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">
+                  Tutorials
+                </Link>
+              </li> */}
+              <li>
+                <Link href="/blog" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Blog</Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Contact</Link>
+              </li>
+              {/* 1st level: hover */}
+              {/* <Dropdown title="Resources">
+                <li>
+                  <Link href="/documentation" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Documentation</Link>
+                </li>
+                <li>
+                  <Link href="/support" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Support center</Link>
+                </li>
+                <li>
+                  <Link href="/404" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">404</Link>
+                </li>
+              </Dropdown> */}
+            </ul>
+
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               {/* <li>

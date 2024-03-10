@@ -8,6 +8,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        aip: {
+          purple: {
+            dark: "#382040",
+            finn: "#58376b",
+            royal: "#794b93",
+            pale: "#efe4f4"
+          },
+          orange: {
+            bittersweet: "#ff745d",
+            sandy: "#ffa561",
+            melon: "#fdb7a1",
+            snow: "#fff5f3"
+          }
+        },
         purple: {
           primary: '#794B93',
           hover: '#906AA6',
@@ -78,7 +92,7 @@ module.exports = {
         '1/1': '100%',
       },
       fontFamily: {
-        inter: ['var(--font-inter)', 'sans-serif'],
+        inter: ['var(--font-inter)', 'sans-serif']
       },
       fontSize: {
         xs: '0.75rem',
@@ -147,5 +161,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
   ],
 };

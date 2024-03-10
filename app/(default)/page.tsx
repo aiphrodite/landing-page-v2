@@ -3,11 +3,12 @@ export const metadata = {
   description: 'testing ads, the smarter way',
 }
 
-import Hero from '@/components/hero'
-import Features from '@/components/features'
+import Hero from '@/components/hero-home'
+import Features from '@/components/features-home'
 import FeaturesBlocks from '@/components/features-blocks'
-import Testimonials from '@/components/testimonials'
-import Newsletter from '@/components/newsletter'
+import FeaturesWorld from '@/components/features-world'
+import News from '@/components/news'
+import Cta from '@/components/cta'
 
 export default function Home() {
   return (
@@ -15,8 +16,7 @@ export default function Home() {
       <Hero />
       <Features />
       <FeaturesBlocks />
-      {/* <Testimonials /> */}
-      {/* <Newsletter /> */}
+      <Cta />
     </>
   )
 }

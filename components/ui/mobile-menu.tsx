@@ -65,6 +65,32 @@ export default function MobileMenu() {
         >
           <ul className="px-5 py-2">
             <li>
+              <Link href="/pricing" className="flex text-gray-600 hover:text-gray-900 py-2" onClick={() => setMobileNavOpen(false)}>Pricing</Link>
+            </li>
+            <li>
+              <Link href="/about" className="flex text-gray-600 hover:text-gray-900 py-2" onClick={() => setMobileNavOpen(false)}>About us</Link>
+            </li>
+            <li>
+              <Link href="/tutorials" className="flex text-gray-600 hover:text-gray-900 py-2" onClick={() => setMobileNavOpen(false)}>Tutorials</Link>
+            </li>
+            <li>
+              <Link href="/blog" className="flex text-gray-600 hover:text-gray-900 py-2" onClick={() => setMobileNavOpen(false)}>Blog</Link>
+            </li>
+            <li className="py-2 my-2 border-t border-b border-gray-200">
+              <span className="flex text-gray-600 hover:text-gray-900 py-2" onClick={() => setMobileNavOpen(false)}>Resources</span>
+              <ul className="pl-4">
+                <li>
+                  <Link href="/documentation" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2" onClick={() => setMobileNavOpen(false)}>Documentation</Link>
+                </li>
+                <li>
+                  <Link href="/support" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2" onClick={() => setMobileNavOpen(false)}>Support center</Link>
+                </li>
+                <li>
+                  <Link href="/404" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2" onClick={() => setMobileNavOpen(false)}>404</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
               <Link href="/signin" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Sign in</Link>
             </li>
             <li>
