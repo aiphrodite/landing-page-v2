@@ -128,7 +128,7 @@ export default function Contact() {
             </div>
             <div className="w-full px-3">
               <a href="mailto:help@aiphrodite.ai?subject=Contact%20Request&body=Email%20Body">
-                <button className="btn text-white bg-blue-600 hover:bg-blue-700 w-full">Email us at help@aiphrodite.ai</button>
+                <button className="btn text-white bg-aip-purple-finn hover:bg-aip-purple-royal w-full">Email us at help@aiphrodite.ai</button>
               </a>
             </div>
 
