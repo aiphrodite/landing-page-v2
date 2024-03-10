@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'About - Simple',
-  description: 'Page description',
+  title: 'aiphrodite.ai - About',
+  description: 'testing ads, the smarter way',
 }
 
 import Intro from './intro'
@@ -9,17 +9,17 @@ import Stats from '@/components/stats'
 import Team from '@/components/team'
 import Career from '@/components/career'
 import Process from '@/components/process'
-import Cta from '@/components/cta-02'
+import Cta from '@/components/cta-career'
 
 export default function About() {
   return (
     <>
       <Intro />
       <Story />
-      <Stats />
+      {/* <Stats /> */}
       <Team />
       <Career />
-      <Process />
+      {/* <Process /> */}
       <Cta />
     </>
   )

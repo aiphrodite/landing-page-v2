@@ -13,7 +13,7 @@ export default function Blog() {
   // Sort posts by date
   allPosts.sort((a, b) => {
     return (new Date(a.publishedAt) > new Date(b.publishedAt)) ? -1 : 1
-  }) 
+  })
 
   return (
     <section>
@@ -22,8 +22,8 @@ export default function Blog() {
 
           {/* Page header */}
           <div className="max-w-3xl pb-12 md:pb-20 text-center md:text-left">
-            <h1 className="h1 mb-4">Type the way you talk</h1>
-            <p className="text-xl text-gray-600">Stay up to date on the latest from Simple and best news from the Dev world.</p>
+            <h1 className="h1 mb-4">aiphrodite.ai's musings</h1>
+            <p className="text-xl text-gray-600">Stay up to date on the latest from aiphrodite.ai</p>
           </div>
 
           {/* Main content */}
@@ -39,7 +39,7 @@ export default function Blog() {
             {/* Sidebar */}
             <aside className="relative mt-12 md:mt-0 md:w-64 md:ml-12 lg:ml-20 md:shrink-0">
               <PopularPosts />
-              <Topics />
+              {/* <Topics /> */}
             </aside>
 
           </div>

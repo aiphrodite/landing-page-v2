@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import AboutImage from '@/public/images/about-01.jpg'
+import AboutImage from '@/public/images/teamPhoto.png'
 
-export default function AboutIntro() {  
+export default function AboutIntro() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -9,9 +9,9 @@ export default function AboutIntro() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4">We enable developers to build amazing things</h1>
+            <h1 className="h1 mb-4">almost your average dorm room startup</h1>
             <p className="text-xl text-gray-600">
-              We have transformed product development, making it faster, simpler... better! That's why in just three years we now help more developers build projects than anyone else.
+              three friends, unlimited university wifi, and a dream to build something that matters. aiphrodite.ai started in cedar hall at the university of toronto and has been growing ever since.
             </p>
           </div>
 

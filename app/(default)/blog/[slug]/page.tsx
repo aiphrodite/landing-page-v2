@@ -83,9 +83,9 @@ export default async function SinglePost({ params }: {
 
                   <div className="text-lg text-gray-600">
                     <hr className="w-full h-px pt-px mt-8 bg-gray-200 border-0" />
-                    <div className="mt-8">
+                    {/* <div className="mt-8">
                       Interested in more tips like this? Check out <a className="text-gray-900 underline" href="#0">Introducing the Testing Field Guide</a>.
-                    </div>
+                    </div> */}
                     <div className="mt-6">
                       <Link href="/blog" className="inline-flex items-center text-base text-blue-600 font-medium hover:underline">
                         <svg className="w-3 h-3 fill-current text-blue-400 shrink-0 mr-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -94,7 +94,7 @@ export default async function SinglePost({ params }: {
                         <span>Back to the blog</span>
                       </Link>
                     </div>
-                  </div>                  
+                  </div>
 
                 </div>
 

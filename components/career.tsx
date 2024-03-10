@@ -4,7 +4,7 @@ import TeamImage02 from '@/public/images/team-mosaic-02.jpg'
 import TeamImage03 from '@/public/images/team-mosaic-03.jpg'
 import TeamImage04 from '@/public/images/team-mosaic-04.jpg'
 
-export default function Career() {  
+export default function Career() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -12,14 +12,14 @@ export default function Career() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h2 mb-4">Simple is growing. Grow with us.</h2>
+            <h2 className="h2 mb-4">aiphrodite.ai is growing.</h2>
             <p className="text-xl text-gray-600">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.
+              the right environment for those who want to be on the cutting-edge. we believe in people over projects, which means we may not have a project in mind for you until you start with us.
             </p>
           </div>
 
           {/* Team images */}
-          <div className="max-w-3xl mx-auto">
+          {/* <div className="max-w-3xl mx-auto">
             <div className="pb-12 md:pb-20">
               <div className="relative w-full h-0 pb-3/4">
                 <figure className="absolute h-auto" style={{ bottom: '9%', width: '41.7%', maxWidth: '320px' }} data-aos="fade-right">
@@ -46,7 +46,7 @@ export default function Career() {
                 </svg>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Job list */}
           <div className="max-w-3xl mx-auto">
@@ -56,32 +56,8 @@ export default function Career() {
             <div className="-my-3">
 
               {/* 1st Item */}
-              <a className="flex justify-between items-center p-4 rounded border border-gray-200 transition duration-300 ease-in-out bg-gray-100 shadow-md hover:bg-white hover:shadow-lg mb-3" href="#0">
-                <div className="font-medium">Senior Backend Engineer</div>
-                <svg className="w-4 h-4 fill-current text-blue-600 shrink-0 ml-6" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13.707 1h-8v2h5.586L1 13.293l1.414 1.414L12.707 4.414V10h2V2a1 1 0 00-1-1z" />
-                </svg>
-              </a>
-
-              {/* 2nd Item */}
-              <a className="flex justify-between items-center p-4 rounded border border-gray-200 transition duration-300 ease-in-out bg-gray-100 shadow-md hover:bg-white hover:shadow-lg mb-3" href="#0">
-                <div className="font-medium">Infrastructure Engineer</div>
-                <svg className="w-4 h-4 fill-current text-blue-600 shrink-0 ml-6" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13.707 1h-8v2h5.586L1 13.293l1.414 1.414L12.707 4.414V10h2V2a1 1 0 00-1-1z" />
-                </svg>
-              </a>
-
-              {/* 3rd Item */}
-              <a className="flex justify-between items-center p-4 rounded border border-gray-200 transition duration-300 ease-in-out bg-gray-100 shadow-md hover:bg-white hover:shadow-lg mb-3" href="#0">
-                <div className="font-medium">Senior Account Executive</div>
-                <svg className="w-4 h-4 fill-current text-blue-600 shrink-0 ml-6" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13.707 1h-8v2h5.586L1 13.293l1.414 1.414L12.707 4.414V10h2V2a1 1 0 00-1-1z" />
-                </svg>
-              </a>
-
-              {/* 4th Item */}
-              <a className="flex justify-between items-center p-4 rounded border border-gray-200 transition duration-300 ease-in-out bg-gray-100 shadow-md hover:bg-white hover:shadow-lg" href="#0">
-                <div className="font-medium">Senior Front-end Architect</div>
+              <a className="flex justify-between items-center p-4 rounded border border-gray-200 transition duration-300 ease-in-out bg-gray-100 shadow-md hover:bg-white hover:shadow-lg mb-3" href="https://www.linkedin.com/hiring/jobs/3846875180/detail/">
+                <div className="font-medium">Software Developer</div>
                 <svg className="w-4 h-4 fill-current text-blue-600 shrink-0 ml-6" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                   <path d="M13.707 1h-8v2h5.586L1 13.293l1.414 1.414L12.707 4.414V10h2V2a1 1 0 00-1-1z" />
                 </svg>

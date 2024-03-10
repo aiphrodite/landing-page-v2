@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Pricing - Simple',
-  description: 'Page description',
+  title: 'aiphrodite.ai - Pricing',
+  description: 'testing ads, the smarter way',
 }
 
 import PricingTables from '@/components/pricing-tables'
@@ -14,8 +14,8 @@ export default function Pricing() {
     <>
       <PricingTables />
       <FeaturesTable />
-      <TestimonialsCarousel />
-      <Faqs />
+      {/* <TestimonialsCarousel /> */}
+      {/* <Faqs /> */}
       <Cta />
     </>
   )

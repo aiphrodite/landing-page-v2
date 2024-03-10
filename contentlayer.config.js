@@ -25,13 +25,13 @@ const Post = defineDocumentType(() => ({
     authorImg: {
       type: 'string',
       required: true,
-    },      
+    },
   },
   computedFields: {
     slug: {
       type: 'string',
       resolve: (doc) => doc._raw.flattenedPath,
-    },    
+    },
   },
 }))
 
@@ -42,5 +42,5 @@ export default makeSource({
     rehypePlugins: [
       rehypeSlug,
     ],
-  }  
+  }
 })
