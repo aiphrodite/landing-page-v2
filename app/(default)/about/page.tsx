@@ -16,7 +16,7 @@ export default function About() {
     <>
       <Intro />
       <Story />
-      {/* <Stats /> */}
+      <Stats />
       <Team />
       <Career />
       {/* <Process /> */}

@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import PlanetImage from '@/public/images/planet.png'
-import PlanetAvatar03 from '@/public/images/planet-avatar-03.png'
-import PlanetAvatar04 from '@/public/images/planet-avatar-04.png'
-import PlanetAvatar05 from '@/public/images/planet-avatar-05.png'
+import PlanetImage from '@/public/images/hero-image.png'
+import PlanetAvatar03 from '@/public/images/hero-image.png'
+import PlanetAvatar04 from '@/public/images/hero-image.png'
+import PlanetAvatar05 from '@/public/images/hero-image.png'
 
-export default function Stats() {  
+export default function Stats() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -12,29 +12,28 @@ export default function Stats() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Developing a global mindset</h1>
-            <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+            <h1 className="h2 mb-4">our values</h1>
           </div>
 
           {/* World illustration */}
-          <div className="flex flex-col items-center pt-16 pb-12 md:pt-20 md:pb-16">
-            <div className="relative">
+          {/* <div className="flex flex-col items-center pt-16 pb-12 md:pt-20 md:pb-16">
+            <div className="relative"> */}
               {/* Halo effect */}
-              <svg className="absolute inset-0 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none" width="800" height="800" viewBox="0 0 800 800" style={{ maxWidth: '200%' }} xmlns="http://www.w3.org/2000/svg">
+              {/* <svg className="absolute inset-0 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none" width="800" height="800" viewBox="0 0 800 800" style={{ maxWidth: '200%' }} xmlns="http://www.w3.org/2000/svg">
                 <g className="fill-current text-gray-400 opacity-75">
                   <circle className="pulse" cx="400" cy="400" r="200" />
                   <circle className="pulse pulse-1" cx="400" cy="400" r="200" />
                   <circle className="pulse pulse-2" cx="400" cy="400" r="200" />
                 </g>
-              </svg>
+              </svg> */}
               {/* White box */}
-              <svg className="absolute w-32 h-auto rounded-full shadow-xl" viewBox="0 0 128 48" style={{ width: '32%', top: '20%', right: '-16%' }} xmlns="http://www.w3.org/2000/svg">
+              {/* <svg className="absolute w-32 h-auto rounded-full shadow-xl" viewBox="0 0 128 48" style={{ width: '32%', top: '20%', right: '-16%' }} xmlns="http://www.w3.org/2000/svg">
                 <rect className="fill-current text-white" width="128" height="48" rx="24" />
-              </svg>
+              </svg> */}
               {/* Globe image */}
-              <Image className="relative rounded-full shadow-xl" src={PlanetImage} width={400} alt="Planet" />
+              {/* <Image className="relative rounded-full shadow-xl" src={PlanetImage} width={400} alt="Planet" /> */}
               {/* Static dots */}
-              <svg className="absolute top-0 w-full h-auto" viewBox="0 0 400 400" style={{ left: '12%' }} xmlns="http://www.w3.org/2000/svg">
+              {/* <svg className="absolute top-0 w-full h-auto" viewBox="0 0 400 400" style={{ left: '12%' }} xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <filter x="-41.7%" y="-34.2%" width="183.3%" height="185.6%" filterUnits="objectBoundingBox" id="world-ill-a">
                     <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1" />
@@ -69,9 +68,9 @@ export default function Stats() {
                   <path d="M258 256.2l87-29.204" stroke="#666" strokeWidth="2" opacity=".16" filter="url(#world-ill-e)" />
                   <path d="M258 251.333c111.333-40.237 141-75.282 89-105.136M136 103.364c66.667 4.543 104.667 32.45 114 83.72" stroke="url(#world-ill-f)" strokeWidth="2" strokeDasharray="2" />
                 </g>
-              </svg>
+              </svg> */}
               {/* Dynamic dots */}
-              <svg className="absolute max-w-full" width="48" height="48" viewBox="0 0 48 48" style={{ width: '12%', top: '45%', left: '50%' }} xmlns="http://www.w3.org/2000/svg">
+              {/* <svg className="absolute max-w-full" width="48" height="48" viewBox="0 0 48 48" style={{ width: '12%', top: '45%', left: '50%' }} xmlns="http://www.w3.org/2000/svg">
                 <g className="fill-current text-blue-600">
                   <circle className="pulse pulse-mini pulse-1" cx="24" cy="24" r="8" />
                   <circle className="pulse pulse-mini pulse-2" cx="24" cy="24" r="8" />
@@ -84,27 +83,27 @@ export default function Stats() {
                   <circle className="pulse pulse-mini pulse-2" cx="24" cy="24" r="8" />
                   <circle cx="24" cy="24" r="8" />
                 </g>
-              </svg>
+              </svg> */}
               {/* Avatars */}
-              <Image className="absolute max-w-full transform animate-float" src={PlanetAvatar03} width={287} height={86} alt="Planet avatar 03" style={{ width: '71.75%', top: '-4%', left: '-23.5%' }} />
+              {/* <Image className="absolute max-w-full transform animate-float" src={PlanetAvatar03} width={287} height={86} alt="Planet avatar 03" style={{ width: '71.75%', top: '-4%', left: '-23.5%' }} />
               <Image className="absolute max-w-full transform animate-float animation-delay-1000" src={PlanetAvatar04} width={256} height={126} alt="Planet avatar 04" style={{ width: '64%', bottom: '2%', right: '-18%' }} />
-              <Image className="absolute max-w-full transform animate-float animation-delay-1000" src={PlanetAvatar05} width={296} height={78} alt="Planet avatar 05" style={{ width: '74%', top: '-5%', right: '-22%' }} />
+              <Image className="absolute max-w-full transform animate-float animation-delay-1000" src={PlanetAvatar05} width={296} height={78} alt="Planet avatar 05" style={{ width: '74%', top: '-5%', right: '-22%' }} /> */}
               {/* White box */}
-              <svg className="absolute w-32 h-auto rounded-full shadow-xl" viewBox="0 0 128 48" style={{ width: '32%', top: '35%', left: '-25%' }} xmlns="http://www.w3.org/2000/svg">
+              {/* <svg className="absolute w-32 h-auto rounded-full shadow-xl" viewBox="0 0 128 48" style={{ width: '32%', top: '35%', left: '-25%' }} xmlns="http://www.w3.org/2000/svg">
                 <rect className="fill-current text-white" width="128" height="48" rx="24" />
-              </svg>
+              </svg> */}
               {/* White box */}
-              <svg className="absolute w-32 h-auto rounded-full shadow-xl" viewBox="0 0 128 48" style={{ width: '32%', top: '52%', right: '-41%' }} xmlns="http://www.w3.org/2000/svg">
+              {/* <svg className="absolute w-32 h-auto rounded-full shadow-xl" viewBox="0 0 128 48" style={{ width: '32%', top: '52%', right: '-41%' }} xmlns="http://www.w3.org/2000/svg">
                 <rect className="fill-current text-white" width="128" height="48" rx="24" />
-              </svg>
+              </svg> */}
               {/* Blue icon */}
-              <svg className="absolute max-w-full w-16 h-auto rounded-full shadow-xl" viewBox="0 0 64 64" style={{ width: '16%', top: '7%', right: '-12%' }} xmlns="http://www.w3.org/2000/svg">
+              {/* <svg className="absolute max-w-full w-16 h-auto rounded-full shadow-xl" viewBox="0 0 64 64" style={{ width: '16%', top: '7%', right: '-12%' }} xmlns="http://www.w3.org/2000/svg">
                 <circle className="fill-current text-blue-600" cx="32" cy="32" r="32" />
                 <path className="fill-current text-white" d="M35.233 22L32 27.6 28.766 22H18l14 24.25L46 22z" />
                 <path className="fill-current text-blue-300" d="M35.233 22L32 27.6 28.766 22H23.6L32 36.548 40.4 22z" />
-              </svg>
+              </svg> */}
               {/* Black icon */}
-              <svg className="absolute max-w-full w-16 h-auto rounded-full shadow-xl" viewBox="0 0 64 64" style={{ width: '16%', bottom: '12%', left: '-17%' }} xmlns="http://www.w3.org/2000/svg">
+              {/* <svg className="absolute max-w-full w-16 h-auto rounded-full shadow-xl" viewBox="0 0 64 64" style={{ width: '16%', bottom: '12%', left: '-17%' }} xmlns="http://www.w3.org/2000/svg">
                 <circle className="fill-current text-gray-800" cx="32" cy="32" r="32" />
                 <g transform="translate(.582 .055)" fill="none" fillRule="evenodd">
                   <g transform="rotate(45 -6.35 52.885)">
@@ -114,7 +113,7 @@ export default function Stats() {
                 </g>
               </svg>
             </div>
-          </div>
+          </div> */}
 
           {/* Items */}
           <div className="max-w-sm mx-auto grid gap-8 md:gap-16 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-5xl pt-8 md:pt-12">
@@ -122,38 +121,38 @@ export default function Stats() {
 
             {/* 1st item */}
             <div className="text-center">
-              <div className="h3 mb-1">2012</div>
-              <div className="text-gray-600">Lorem ipsum is placeholder text commonly used tristique senectus et netus.</div>
+              <div className="h3 mb-1">Customer Obsession</div>
+              <div className="text-gray-600">we are here to make our users' lives better and keep that top of mind in every decision.</div>
             </div>
 
             {/* 2nd item */}
             <div className="text-center">
-              <div className="h3 mb-1">$20M</div>
-              <div className="text-gray-600">Lorem ipsum is placeholder text commonly used tristique senectus et netus.</div>
+              <div className="h3 mb-1">Innovation</div>
+              <div className="text-gray-600">we strive to make new solutions that better the lives of our users and the world</div>
             </div>
 
             {/* 3rd item */}
             <div className="text-center">
-              <div className="h3 mb-1">250M+</div>
-              <div className="text-gray-600">Lorem ipsum is placeholder text commonly used tristique senectus et netus.</div>
+              <div className="h3 mb-1">Diversity</div>
+              <div className="text-gray-600">the founders would have not succeeded without their unique perspectives, from being people of color to being LGBTQ+, the diverse world-views everyone can provide is valued</div>
             </div>
 
             {/* 4th item */}
             <div className="text-center">
-              <div className="h3 mb-1">2700+</div>
-              <div className="text-gray-600">Lorem ipsum is placeholder text commonly used tristique senectus et netus.</div>
+              <div className="h3 mb-1">Be Mischievous</div>
+              <div className="text-gray-600">don't be afraid of being judged negatively to intervene.</div>
             </div>
 
             {/* 5th item */}
             <div className="text-center">
-              <div className="h3 mb-1">400K</div>
-              <div className="text-gray-600">Lorem ipsum is placeholder text commonly used tristique senectus et netus.</div>
+              <div className="h3 mb-1">Empathy</div>
+              <div className="text-gray-600">offer everyone around you understanding, give them the benefit of the doubt as nearly all actions derive from well intentions</div>
             </div>
 
             {/* 6th item */}
             <div className="text-center">
-              <div className="h3 mb-1">Millions</div>
-              <div className="text-gray-600">Lorem ipsum is placeholder text commonly used tristique senectus et netus.</div>
+              <div className="h3 mb-1">Generativity</div>
+              <div className="text-gray-600">it is the responsibility of the fortunate to protect and uplift those without. </div>
             </div>
 
           </div>

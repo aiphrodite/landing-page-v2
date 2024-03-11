@@ -2,7 +2,7 @@ import Image from 'next/image'
 import AboutImage from '@/public/images/about-02.jpg'
 import MarshallProfile from '@/public/images/marshallProfile.jpg'
 
-export default function AboutStory() {  
+export default function AboutStory() {
   return (
     <section>
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
