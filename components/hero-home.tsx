@@ -30,10 +30,10 @@ export default function HeroHome() {
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
             <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">
-              say goodbye to A/B testing with <span style={{backgroundImage: 'linear-gradient(135deg, #FF745D, #794B93)', backgroundClip: 'text', WebkitBackgroundClip: 'text', color: 'transparent'}}>aiphrodite.ai</span>
+              Say Goodbye to A/B Testing With <span style={{backgroundImage: 'linear-gradient(135deg, #FF745D, #794B93)', backgroundClip: 'text', WebkitBackgroundClip: 'text', color: 'transparent'}}>aiphrodite.ai</span>
             </h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">aiphrodite brings the power of AI to marketing managers, analysts, and their teams. instantly see how your audience will react to an ad, before it is published. no more need for testing, aiphrodite helps you get back to Creating Creativity!</p>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">aiphrodite.ai brings the power of AI to marketing managers, analysts, and their teams. Instantly see how your audience will react to an ad, before it is published. No more need for testing, aiphrodite.ai helps you get back to Creating Creativity!</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
                   <a className="btn text-white bg-purple-primary hover:bg-purple-hover w-full mb-4 sm:w-auto sm:mb-0" href="https://calendly.com/aiphrodite/discover">Book a Discovery Call</a>

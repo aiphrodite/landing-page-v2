@@ -70,13 +70,16 @@ export default function MobileMenu() {
             <li>
               <Link href="/about" className="flex text-gray-600 hover:text-gray-900 py-2" onClick={() => setMobileNavOpen(false)}>About us</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/tutorials" className="flex text-gray-600 hover:text-gray-900 py-2" onClick={() => setMobileNavOpen(false)}>Tutorials</Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/blog" className="flex text-gray-600 hover:text-gray-900 py-2" onClick={() => setMobileNavOpen(false)}>Blog</Link>
             </li>
-            <li className="py-2 my-2 border-t border-b border-gray-200">
+            <li>
+              <Link href="/contact" className="flex text-gray-600 hover:text-gray-900 py-2" onClick={() => setMobileNavOpen(false)}>Blog</Link>
+            </li>
+            {/* <li className="py-2 my-2 border-t border-b border-gray-200">
               <span className="flex text-gray-600 hover:text-gray-900 py-2" onClick={() => setMobileNavOpen(false)}>Resources</span>
               <ul className="pl-4">
                 <li>
@@ -100,7 +103,7 @@ export default function MobileMenu() {
                   <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fill="#999" fillRule="nonzero" />
                 </svg>
               </Link>
-            </li>
+            </li> */}
           </ul>          
         </Transition>
       </div>
