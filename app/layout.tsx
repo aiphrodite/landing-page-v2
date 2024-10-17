@@ -1,3 +1,5 @@
+import './css/style.css'
+
 import Header from '@/components/ui/header'
 
 import { Inter } from 'next/font/google'
