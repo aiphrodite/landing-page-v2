@@ -40,3 +40,7 @@ next-env.d.ts
 
 # package-lock
 package-lock.json
+/.yarn
+.yarnrc.yml
+package.json
+yarn.lock
