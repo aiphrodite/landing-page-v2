@@ -23,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* <!-- Start of LinkedIn Insight Tag Code --> */}
         <script type="text/javascript">
           {`
             _linkedin_partner_id = "6703628";
@@ -43,6 +44,10 @@ export default function RootLayout({
             })(window.lintrk);
           `}
         </script>
+        {/* <!-- End of LinkedIn Insight Tag Code --> */}
+        {/* <!-- Start of HubSpot Embed Code --> */}
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/45658506.js"></script>
+        {/* <!-- End of HubSpot Embed Code --> */}
       </head>
       <body className={`${inter.variable} font-inter antialiased bg-white text-gray-900 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
