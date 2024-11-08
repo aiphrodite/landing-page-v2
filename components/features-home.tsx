@@ -1,172 +1,109 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState } from 'react'
 import { Transition } from '@headlessui/react'
 import Image from 'next/image'
-import FeaturesBg from '@/public/images/features-bg.png'
-import FeaturesElement from '@/public/images/features-element.png'
-import AIPersonasTab from '@/public/images/ai_personas_tab.png'
-import AiphroditeScoresTab from '@/public/images/aiphrodite_scores_tab.png'
-import ExplainableTab from '@/public/images/explainable_tab.png'
+import { Card, CardBody } from '@nextui-org/react'
+import { Icon } from '@iconify/react'
 
 export default function FeaturesHome() {
 
-  const [tab, setTab] = useState<number>(1)
+  const [selectedFeature, setSelectedFeature] = useState<number>(0)
 
-  const tabs = useRef<HTMLDivElement>(null)
-
-  const heightFix = () => {
-    if (tabs.current && tabs.current.parentElement) tabs.current.parentElement.style.height = `${tabs.current.clientHeight}px`
-  }
-
-  useEffect(() => {
-    heightFix()
-  }, [])
+  const features = [
+    {
+      title: 'AI Personas',
+      description: 'Create and simulate your target audience with AI to get instant and actionable feedback on your ads.',
+      icon: 'material-symbols:person-book',
+      image: '/images/feature-1.svg',
+    },
+    {
+      title: 'aiphrodite score',
+      description: 'Find which ads from your set are resonating the most with your target audience.',
+      icon: 'material-symbols:insert-chart',
+      image: '/images/feature-2.webp',
+    },
+    {
+      title: 'Explainable',
+      description: 'Learn why an ad is working with your target audience so you can replicate successes and avoid failures.',
+      icon: 'material-symbols:list-alt',
+      image: '/images/feature-3.svg',
+    },
+  ]
 
   return (
-    <section className="relative">
+    <section
+      className="bg-black dark"
+      style={{ backgroundImage: 'url(/images/features-bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'top', backgroundRepeat: 'no-repeat' }}
+    >
 
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
-      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+      <div className="h-full w-full py-24"
+        style={{ backgroundImage: 'url(/images/features-bg-overlay.svg)', backgroundSize: 'cover', backgroundPosition: 'top', backgroundRepeat: 'no-repeat' }}
+      >
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-12 md:pt-20">
+        <div className="max-w-6xl mx-auto mb-20 text-center">
+          <h1 className="h2 mb-4 text-white">AI-based ad testing</h1>
+          <p className="text-xl text-gray-200">A new way to test ads on all target audiences. Even niche ones.</p>
+        </div>
 
-          {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">aiphrodite's explainable solution</h1>
-            <p className="text-xl text-gray-600">aiphrodite offers a new way to test ads on all target audiences. even niche ones.</p>
-          </div>
+        <div className="w-full">
 
-          {/* Section content */}
-          <div className="md:grid md:grid-cols-12 md:gap-6">
-
-            {/* Content */}
+          <div className="max-w-6xl mx-auto flex flex-row">
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
-              <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">AI-based ad testing</h3>
-                <p className="text-xl text-gray-600">aiphrodite.ai uses AI Personas to instantly show you how your audience will react to an ad.</p>
-              </div>
-              {/* Tabs buttons */}
-              <div className="mb-8 md:mb-0">
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(1); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">AI Personas</div>
-                    <div className="text-gray-600">Create and simulate your target audience with AI to get instant and actionable feedback on your ads.</div>
-                  </div>
-                  <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-                    </svg>
-                  </div>
-                </a>
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(2); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">aiphrodite score</div>
-                    <div className="text-gray-600">Find which ads from your set are resonating the most with your target audience.</div>
-                  </div>
-                  <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.854.146a.5.5 0 00-.525-.116l-11 4a.5.5 0 00-.015.934l4.8 1.921 1.921 4.8A.5.5 0 007.5 12h.008a.5.5 0 00.462-.329l4-11a.5.5 0 00-.116-.525z" fillRule="nonzero" />
-                    </svg>
-                  </div>
-                </a>
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 3 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(3); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Explainable</div>
-                    <div className="text-gray-600">Learn why an ad is working with your target audience so you can replicate successes and avoid failures.</div>
-                  </div>
-                  <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.334 8.06a.5.5 0 00-.421-.237 6.023 6.023 0 01-5.905-6c0-.41.042-.82.125-1.221a.5.5 0 00-.614-.586 6 6 0 106.832 8.529.5.5 0 00-.017-.485z" fill="#191919" fillRule="nonzero" />
-                    </svg>
-                  </div>
-                </a>
+              <div className="flex flex-col gap-4 mb-8 md:mb-0">
+                {features.map((feature, index) => (
+                  <Card
+                    shadow="lg"
+                    key={index}
+                    isPressable
+                    onPress={() => setSelectedFeature(index)}
+                    className={`bg-gray-900 border rounded-lg ${index === selectedFeature ? 'border-aip-orange-sandy' : 'border-gray-800 hover:border-gray-700'}`}
+                  >
+                    <CardBody className="flex flex-row justify-between items-center">
+                      <div>
+                        <div className="font-bold text-gray-200 mb-1">{feature.title}</div>
+                        <div className="text-gray-400">{feature.description}</div>
+                      </div>
+                      <div className="flex justify-center items-center w-10 h-10 bg-gray-800 text-gray-200 rounded-full shadow-lg flex-shrink-0 ml-3">
+                        <Icon icon={feature.icon} height={24} />
+                      </div>
+                    </CardBody>
+                  </Card>
+                ))}
               </div>
             </div>
 
-            {/* Tabs items */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1">
               <div className="transition-all">
-                <div className="relative flex flex-col text-center lg:text-right" data-aos="zoom-y-out" ref={tabs}>
-                  {/* Item 1 */}
-                  <Transition
-                    show={tab === 1}
-                    appear={true}
-                    className="w-full"
-                    enter="transition ease-in-out duration-700 transform order-first"
-                    enterFrom="opacity-0 translate-y-16"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in-out duration-300 transform absolute"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
-                    unmount={false}
-                  >
-                    <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={AIPersonasTab} width={500} height="462" alt="Features bg" />
-                      {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
-                    </div>
-                  </Transition>
-                  {/* Item 2 */}
-                  <Transition
-                    show={tab === 2}
-                    appear={true}
-                    className="w-full"
-                    enter="transition ease-in-out duration-700 transform order-first"
-                    enterFrom="opacity-0 translate-y-16"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in-out duration-300 transform absolute"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
-                    unmount={false}
-                  >
-                    <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={AiphroditeScoresTab} width={500} height="462" alt="Features bg" />
-                      {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
-                    </div>
-                  </Transition>
-                  {/* Item 3 */}
-                  <Transition
-                    show={tab === 3}
-                    appear={true}
-                    className="w-full"
-                    enter="transition ease-in-out duration-700 transform order-first"
-                    enterFrom="opacity-0 translate-y-16"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in-out duration-300 transform absolute"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
-                    unmount={false}
-                  >
-                    <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={ExplainableTab} width={500} height="462" alt="Features bg" />
-                      {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
-                    </div>
-                  </Transition>
+                <div className="relative flex flex-col text-center lg:text-right" data-aos="zoom-y-out">
+                  {features.map((feature, index) => (
+                    <Transition
+                      show={selectedFeature === index}
+                      appear={true}
+                      key={index}
+                      className="w-full"
+                      enter="transition ease-in-out duration-700 transform order-first"
+                      enterFrom="opacity-0 translate-y-16"
+                      enterTo="opacity-100 translate-y-0"
+                      leave="transition ease-in-out duration-300 transform absolute"
+                      leaveFrom="opacity-100 translate-y-0"
+                      leaveTo="opacity-0 -translate-y-16"
+                      unmount={false}
+                    >
+                      <div className="relative inline-flex flex-col">
+                        <Image className="md:max-w-none mx-auto drop-shadow-lg" src={feature.image} width={500} height="462" alt={feature.title} />
+                      </div>
+                    </Transition>
+                  ))}
                 </div>
               </div>
             </div>
-
           </div>
 
         </div>
+
       </div>
+
     </section>
   )
 }
