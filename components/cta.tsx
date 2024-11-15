@@ -17,7 +17,7 @@ export default function Cta() {
 
               {/* CTA button */}
               <div>
-                <a className="btn text-white bg-aip-orange-bittersweet" href="https://calendly.com/aiphrodite/discover">Book a Discovery Call</a>
+                <a className="btn text-white bg-aip-orange-bittersweet" href="https://sales.aiphrodite.ai/meetings/willsong/discover">Book a Discovery Call</a>
               </div>
 
             </div>
