@@ -1,9 +1,12 @@
+const {nextui} = require("@nextui-org/react");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -162,5 +165,29 @@ module.exports = {
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            background: "#FFFFFF",
+            foreground: "#11181C",
+            primary: {
+              foreground: "#FFFFFF",
+              DEFAULT: "#794b93",
+            },
+            secondary: {
+              foreground: "#FFFFFF",
+              DEFAULT: "#ff745d",
+            },
+          },
+        },
+        dark: {
+          colors: {
+            background: "#11181C",
+            foreground: "#FFFFFF",
+          },
+        },
+      },
+    }),
   ],
 };
