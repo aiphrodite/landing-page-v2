@@ -1,9 +1,9 @@
-import { Button } from '@nextui-org/react'
+import { Link } from '@nextui-org/react'
 import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className='w-full text-white'
+    <footer className='w-full text-white dark'
       style={{
         backgroundImage: 'url(/images/footer-bg.webp)',
         backgroundSize: 'cover',
@@ -24,23 +24,21 @@ export default function Footer() {
               <div className="mb-2">
                 <Image src="/images/logo-full-white.svg" alt="aiphrodite logo" width={300} height={100} />
               </div>
-              <div className="">
-                <Button 
-                  variant="flat"
-                  color="primary"
+              <div className="flex gap-4">
+                <Link 
                   href="/terms"
+                  color="foreground"
                   className="hover:text-gray-200"
                 >
                   Terms
-                </Button>
-                <Button 
-                  variant="flat"
-                  color="primary"
+                </Link>
+                <Link 
                   href="/privacy"
+                  color="foreground"
                   className="hover:text-gray-200"
                 >
                   Privacy Policy
-                </Button>
+                </Link>
               </div>
             </div>
 

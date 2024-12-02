@@ -4,22 +4,18 @@ export const metadata = {
 }
 
 import Intro from './intro'
-import Story from './story'
-import Stats from '@/components/stats'
-import Team from '@/components/team'
-import Career from '@/components/career'
-import Process from '@/components/process'
-import Cta from '@/components/cta-career'
+import Values from './values'
+import Team from './team'
+import Career from './career'
+import Cta from './cta-career'
 
 export default function About() {
   return (
     <>
       <Intro />
-      <Story />
-      <Stats />
+      <Values />
       <Team />
       <Career />
-      {/* <Process /> */}
       <Cta />
     </>
   )
