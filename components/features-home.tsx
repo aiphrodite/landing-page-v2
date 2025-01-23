@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Transition } from '@headlessui/react'
 import Image from 'next/image'
-import { Card, CardBody } from '@nextui-org/react'
+import { Card, CardBody } from "@heroui/react"
 import { Icon } from '@iconify/react'
 
 export default function FeaturesHome() {
