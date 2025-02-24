@@ -1,112 +1,90 @@
-import type { Metadata } from 'next'
-import { allPosts } from 'contentlayer/generated'
-import { notFound } from 'next/navigation'
-import Image from 'next/image'
-import Link from 'next/link'
-import PostDate from '@/components/post-date'
-import { Mdx } from '@/components/mdx/mdx'
-import PostNav from './post-nav'
+import type { Metadata } from "next";
+import { getBlogPosts } from "@/components/mdx/utils";
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import PostDate from "@/components/post-date";
+import { CustomMDX } from "@/components/mdx/mdx";
+import PostNav from "./post-nav";
+import PageIllustration from "@/components/page-illustration";
+import Newsletter from "@/components/newsletter";
 
-export async function generateStaticParams() {
-  return allPosts.map((post) => ({
-    slug: post.slug,
-  }))
-}
+export async function generateMetadata(
+  props: {
+    params: Promise<{ slug: string }>;
+  }
+): Promise<Metadata | undefined> {
+  const params = await props.params;
+  const post = getBlogPosts().find((post) => post.slug === params.slug);
 
-export async function generateMetadata({ params }: {
-  params: { slug: string }
-}): Promise<Metadata | undefined> {
+  if (!post) {
+    return;
+  }
 
-  const post = allPosts.find((post) => post.slug === params.slug)
-
-  if (!post) return
-
-  const { title, summary: description } = post
+  const { title, summary: description } = post.metadata;
 
   return {
     title,
     description,
-  }
+  };
 }
 
-export default async function SinglePost({ params }: {
-  params: { slug: string }
-}) {
+export default async function SinglePost(
+  props: {
+    params: Promise<{ slug: string }>;
+  }
+) {
+  const params = await props.params;
+  const post = getBlogPosts().find((post) => post.slug === params.slug);
 
-  const post = allPosts.find((post) => post.slug === params.slug)
-
-  if (!post) notFound()
+  if (!post) notFound();
 
   return (
-    <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
-          <div className="max-w-3xl mx-auto lg:max-w-none">
-
+    <section className="relative">
+      <PageIllustration />
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="flex justify-between pb-12 pt-32 md:pb-20 md:pt-40">
+          {/* Left content */}
+          <div className="max-w-3xl">
             <article>
-
-              {/* Article header */}
-              <header className="max-w-3xl mx-auto mb-20">
-                {/* Title */}
-                <h1 className="h1 text-center mb-4">{post.title}</h1>
-              </header>
-
-              {/* Article content */}
-              <div className="lg:flex lg:justify-between">
-
-                {/* Sidebar */}
-                <PostNav />
-
-                {/* Main content */}
-                <div>
-
-                  {/* Article meta */}
-                  <div className="flex items-center mb-6">
-                    <div className="flex shrink-0 mr-3">
-                      <a className="relative" href="#0">
-                        <span className="absolute inset-0 -m-px" aria-hidden="true"><span className="absolute inset-0 -m-px bg-white rounded-full"></span></span>
-                        <Image className="relative rounded-full" src={post.authorImg} width={32} height={32} alt={post.author} />
-                      </a>
-                    </div>
-                    <div>
-                      <span className="text-gray-600">By </span>
-                      <a className="font-medium hover:underline" href="#0">{post.author}</a>
-                      <span className="text-gray-600"> · <PostDate dateString={post.publishedAt} /></span>
-                    </div>
-                  </div>
-                  <hr className="w-16 h-px pt-px bg-gray-200 border-0 mb-6" />
-
-                  {/* Article body */}
-                  <div>
-                    <Mdx code={post.body.code} />
-                  </div>
-
-                  <div className="text-lg text-gray-600">
-                    <hr className="w-full h-px pt-px mt-8 bg-gray-200 border-0" />
-                    {/* <div className="mt-8">
-                      Interested in more tips like this? Check out <a className="text-gray-900 underline" href="#0">Introducing the Testing Field Guide</a>.
-                    </div> */}
-                    <div className="mt-6">
-                      <Link href="/blog" className="inline-flex items-center text-base text-blue-600 font-medium hover:underline">
-                        <svg className="w-3 h-3 fill-current text-blue-400 shrink-0 mr-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M.293 5.282L5 .5l1.414 1.436-3 3.048H12v2.032H3.414l3 3.048L5 11.5.293 6.718a1.027 1.027 0 010-1.436z" />
-                        </svg>
-                        <span>Back to the blog</span>
-                      </Link>
-                    </div>
-                  </div>
-
+              {/* Section header */}
+              <header className="pb-8">
+                <div className="mb-6">
+                  <Link
+                    className="text-sm font-medium text-blue-500 transition-colors hover:text-blue-600"
+                    href="/blog"
+                  >
+                    <span className="tracking-normal text-blue-300">&lt;-</span>{" "}
+                    Back To Blog
+                  </Link>
                 </div>
-
+                <h1 className="mb-5 text-5xl font-bold">
+                  {post.metadata.title}
+                </h1>
+                <div className="flex items-center gap-3">
+                  <img
+                    className="rounded-full"
+                    src={post.metadata.authorImg}
+                    width={32}
+                    height={32}
+                    alt={post.metadata.author}
+                  />
+                  <div className="text-sm text-gray-500">
+                    {post.metadata.author} ·{" "}
+                    <span className="text-gray-700">
+                      <PostDate dateString={post.metadata.publishedAt} />
+                    </span>
+                  </div>
+                </div>
+              </header>
+              <div className="prose max-w-none text-gray-700 prose-headings:scroll-mt-24 prose-headings:font-bold prose-headings:text-gray-900 prose-a:font-medium prose-a:text-blue-500 prose-a:no-underline hover:prose-a:underline prose-blockquote:border-l-2 prose-blockquote:border-gray-300 prose-blockquote:pl-4 prose-blockquote:font-medium prose-blockquote:italic prose-blockquote:text-gray-900 prose-strong:font-medium prose-strong:text-gray-900 prose-code:rounded prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:font-mono prose-code:text-gray-900 prose-code:before:content-[''] prose-code:after:content-[''] prose-pre:border prose-pre:border-gray-700 prose-pre:bg-gray-900 prose-blockquote:xl:-ml-4">
+                <CustomMDX source={post.content} />
               </div>
-
-              {/* Article footer */}
             </article>
-
           </div>
-
+          {/* Right sidebar */}
+          <PostNav />
         </div>
       </div>
     </section>
-  )
+  );
 }
