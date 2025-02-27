@@ -4,6 +4,7 @@ export const metadata = {
 }
 
 import Hero from '@/components/hero-home'
+import Work from "@/components/work";
 import Features from '@/components/features-home'
 import FeaturesBlocks from '@/components/features-blocks'
 import Cta from '@/components/cta'
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Work />
       <Features />
       <FeaturesBlocks />
       <Cta />

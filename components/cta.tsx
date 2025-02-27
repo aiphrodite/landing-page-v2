@@ -9,7 +9,7 @@ export default function Cta() {
             <p className="text-lg opacity-75">start testing your ads, the smarter way</p>
           </div>
           <div>
-            <a className="btn bg-aip-orange-bittersweet" href="https://calendly.com/aiphrodite/discover">Book a Discovery Call</a>
+            <a className="btn bg-aip-orange-bittersweet" href="https://sales.aiphrodite.ai/meetings/willsong/discover">Book a Discovery Call</a>
           </div>
 
         </div>
