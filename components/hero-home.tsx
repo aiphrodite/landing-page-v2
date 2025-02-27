@@ -4,7 +4,7 @@ export default function HeroHome() {
   return (
     <section
       className="relative pt-20 md:pt-40 space-y-20"
-      style={{ backgroundImage: 'url(/images/splash-background-1.svg)', backgroundSize: 'cover', backgroundPosition: 'center 250px', backgroundRepeat: 'no-repeat' }}
+      style={{ backgroundImage: 'url(/images/splash-background-2.svg)', backgroundSize: 'cover', backgroundPosition: 'center 250px', backgroundRepeat: 'no-repeat' }}
     >
 
       <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 text-center">
