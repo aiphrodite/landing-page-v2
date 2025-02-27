@@ -11,7 +11,7 @@ export default function AboutStory() {
           <div className="max-w-3xl mx-auto">
             <h3 className="h3 mb-3">Our story</h3>
             <p className="text-lg text-gray-600 mb-8">
-              will and thomson lived across from each other, abhi embodied the unofficial mascot of toronto (a racoon) and kept finding ways to sneak into the building. the three of them would talk endlessly about the future of technology, how artifial intelligence brought them to this institution, and how they could make a difference.
+              will and thomson lived across from each other, abhi embodied the unofficial mascot of toronto (a racoon) and kept finding ways to sneak into the building. the three of them would talk endlessly about the future of technology, how artificial intelligence brought them to this institution, and how they could make a difference.
             </p>
             <p className="text-lg text-gray-600 mb-8">
               before long, under the tutilage of their professors, they were building aiphrodite.ai. inspired by previous work in the field of marketing, they saw how data crunching limited creativity and innovation. they wanted to change that and enable other creatives like themselves to focus on what they do best: create.
@@ -29,6 +29,14 @@ export default function AboutStory() {
               <h4 className="h4 mb-2">2023</h4>
               <p className="text-lg text-gray-600 mb-8">
                 aiphrodite.ai was incorporated, headquartered in toronto, canada. and marshall was recruited as the CCO (Chief Cuteness Officer).
+              </p>
+              <h4 className="h4 mb-2">2024</h4>
+              <p className="text-lg text-gray-600 mb-8">
+                aiphrodite.ai secures an accelerator round, led by the amazing team at Forum Ventures.
+              </p>
+              <h4 className="h4 mb-2">2025</h4>
+              <p className="text-lg text-gray-600 mb-8">
+                c'mon it just started! built out an amazing case study and were handpicked by PwC to their Scale AdTech cohort.
               </p>
               {/* <div className="flex  mb-8">
                 <Image className="rounded-full self-start shrink-0 shadow-lg mr-4" src={AboutLogo} width={40} height={40} alt="Logo" />

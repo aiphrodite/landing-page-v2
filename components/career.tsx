@@ -12,9 +12,9 @@ export default function Career() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h2 mb-4">aiphrodite.ai is growing.</h2>
+            <h2 className="h2 mb-4">Raising? Always.</h2>
             <p className="text-xl text-gray-600">
-              the right environment for those who want to be on the cutting-edge. we believe in people over projects, which means we may not have a project in mind for you until you start with us.
+              We are always looking for the right partners. If this is you, email us at <a className="text-blue-600 hover:underline" href="mailto:invest@aiphrodite.ai">invest@aiphrodite.ai</a>.
             </p>
           </div>
 
@@ -49,14 +49,14 @@ export default function Career() {
           </div> */}
 
           {/* Job list */}
-          <div className="max-w-3xl mx-auto">
+          {/* <div className="max-w-3xl mx-auto">
 
             <h3 className="h4 mb-8">Current open positions</h3>
 
-            <div className="-my-3">
+            <div className="-my-3"> */}
 
               {/* 1st Item */}
-              <a className="flex justify-between items-center p-4 rounded border border-gray-200 transition duration-300 ease-in-out bg-gray-100 shadow-md hover:bg-white hover:shadow-lg mb-3" href="https://www.linkedin.com/hiring/jobs/3846875180/detail/">
+              {/* <a className="flex justify-between items-center p-4 rounded border border-gray-200 transition duration-300 ease-in-out bg-gray-100 shadow-md hover:bg-white hover:shadow-lg mb-3" href="https://www.linkedin.com/hiring/jobs/3846875180/detail/">
                 <div className="font-medium">Software Developer</div>
                 <svg className="w-4 h-4 fill-current text-blue-600 shrink-0 ml-6" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                   <path d="M13.707 1h-8v2h5.586L1 13.293l1.414 1.414L12.707 4.414V10h2V2a1 1 0 00-1-1z" />
@@ -65,7 +65,7 @@ export default function Career() {
 
             </div>
 
-          </div>
+          </div> */}
 
         </div>
       </div>
