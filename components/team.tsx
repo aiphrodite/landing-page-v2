@@ -15,10 +15,10 @@ export default function Team() {
           </div>
 
           {/* Team members */}
-          <div className="max-w-sm sm:max-w-5xl mx-auto sm:flex sm:flex-wrap sm:justify-center -my-6 sm:-my-8 sm:-mx-3" data-aos-id-team>
+          <div className="max-w-sm sm:max-w-5xl mx-auto justify-center grid grid-cols-3  md:grid-cols-3" data-aos-id-team>
 
             {/* 1st member */}
-            <div className="sm:w-1/2 md:w-1/3 py-6 sm:py-8 sm:px-3" data-aos="zoom-y-out" data-aos-anchor="[data-aos-id-team]">
+            <div className="py-6 sm:py-8 sm:px-3" data-aos="zoom-y-out" data-aos-anchor="[data-aos-id-team]">
               <div className="flex flex-col items-center">
                 <Image className="rounded-full mb-4" src={TeamMember01} width={120} height={120} alt="Abhivyakti Ahuja" />
                 <h4 className="text-xl font-bold mb-1">Abhivyakti Ahuja</h4>
@@ -31,7 +31,7 @@ export default function Team() {
             </div>
 
             {/* 2nd member */}
-            <div className="sm:w-1/2 md:w-1/3 py-6 sm:py-8 sm:px-3" data-aos="zoom-y-out" data-aos-delay="150" data-aos-anchor="[data-aos-id-team]">
+            <div className="py-6 sm:py-8 sm:px-3" data-aos="zoom-y-out" data-aos-delay="150" data-aos-anchor="[data-aos-id-team]">
               <div className="flex flex-col items-center">
                 <Image className="rounded-full mb-4" src={TeamMember02} width={120} height={120} alt="Team member 02" />
                 <h4 className="text-xl font-bold mb-1">Will Song</h4>
@@ -44,7 +44,7 @@ export default function Team() {
             </div>
 
             {/* 3rd member */}
-            <div className="sm:w-1/2 md:w-1/3 py-6 sm:py-8 sm:px-3" data-aos="zoom-y-out" data-aos-delay="300" data-aos-anchor="[data-aos-id-team]">
+            <div className="py-6 sm:py-8 sm:px-3" data-aos="zoom-y-out" data-aos-delay="300" data-aos-anchor="[data-aos-id-team]">
               <div className="flex flex-col items-center">
                 <Image className="rounded-full mb-4" src={TeamMember03} width={120} height={120} alt="Team member 03" />
                 <h4 className="text-xl font-bold mb-1">Thomson Yen</h4>
