@@ -1,5 +1,6 @@
-import { Button } from "@heroui/react"
-import Image from 'next/image'
+import { Button } from "@heroui/react";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -17,7 +18,6 @@ export default function Footer() {
           backgroundPosition: 'center',
         }}
       >
-          
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12">
             <div className="sm:col-span-12 lg:col-span-3">
@@ -25,22 +25,33 @@ export default function Footer() {
                 <Image src="/images/logo-full-white.svg" alt="aiphrodite logo" width={300} height={100} />
               </div>
               <div className="">
-                <Button 
-                  variant="flat"
-                  color="primary"
-                  href="/terms"
-                  className="hover:text-gray-200"
-                >
-                  Terms
-                </Button>
-                <Button 
-                  variant="flat"
-                  color="primary"
-                  href="/privacy"
-                  className="hover:text-gray-200"
-                >
-                  Privacy Policy
-                </Button>
+                <Link href="/terms" passHref>
+                  <Button
+                    variant="flat"
+                    color="primary"
+                    className="hover:text-gray-200"
+                  >
+                    Terms
+                  </Button>
+                </Link>
+                <Link href="/privacy" passHref>
+                  <Button
+                    variant="flat"
+                    color="primary"
+                    className="hover:text-gray-200"
+                  >
+                    Privacy Policy
+                  </Button>
+                </Link>
+                <Link href="/investors" passHref>
+                  <Button
+                    variant="flat"
+                    color="primary"
+                    className="hover:text-gray-200"
+                  >
+                    Investor Relations
+                  </Button>
+                </Link>
               </div>
             </div>
 
@@ -54,5 +65,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
