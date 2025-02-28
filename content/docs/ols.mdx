@@ -1,59 +1,55 @@
 ---
-title: "R&D: Online Label Shift Adaptation for Digital Marketers"
+title: "R&D- People Change: Online Label Shift Adaptation"
 publishedAt: "2025-02-24"
-updatedAt: "2025-02-25"
+updatedAt: "2025-02-27"
 summary: "How OLS helps AI algorithms deepen the understanding of online audiences and adapt marketing strategies in real-time"
 kind: "detailed"
 ---
-This white paper discusses the importance of addressing online label shift (OLS) for digital marketers aiming to understand their online audiences and is part of our public research. The original paper was published by our staff at [The Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS) 2023](https://proceedings.neurips.cc/paper_files/paper/2023/file/cf42f133f355e0e07a8957b508b26a1b-Paper-Conference.pdf).
+I was told by my cofounder that this sounds like ChatGPT. Well let's see ChatGPT spit this 🔥.
+
+'sup 🤓. Do you know what sucks with marketing? People change constantly. You figure something out then a few minutes later their mind changes and like I get this with a toddler but are like, all my consumers toddlers? It's a pain in the 🍑 to keep up with shifting trends constantly. I hated this when I was a marketer and since I moved into AI research to deal with this, I figured I would share one tool we use to mirror consumer sentiment in our model. So we're putting out this white paper, an adaptation of our research debuted at [The Thirty-Seventh Annual Conference on Neural Information Processing Systems (NeurIPS) 2023](https://neurips.cc/virtual/2023/poster/71994) (this is like big boss 💩 in the academic world), that discusses the importance of addressing online label shift (OLS) for:
+
+- market researchers
+- digital marketers
+- digital merchandisers
+- brand strategists/identity-ers
+- digital content managers
+- ecommerce managers
+
+If you're like a super-nerd then please check out the paper, fascinating stuff.
 
 ## Introduction
 
-Supervised machine learning algorithms typically assume that data is independent and identically distributed (iid). However, real-world environments, including those encountered by digital marketers, evolve dynamically. This evolution leads to distribution shifts, where the statistical properties of the data change over time. When these shifts are not addressed, the performance of machine learning models can degrade significantly.
+Supervised machine learning algorithms typically assume that data is independent and identically distributed (iid). Aka all data points are equal, but like the great Napoleon (the 🐷 not the 🥖) said: "... some are more equal than ours". (Orwell would be so proud he's getting quoted in such a hyper capitalist setting.) But, real-world environments evolve dynamically. This evolution leads to distribution shifts, where the statistical properties of the data change over time. When these shifts are not addressed, the performance of machine learning models can degrade significantly. That's why what worked last week doesn't work this week, that's why a lot of models can suck. Ours did so we added this in.
 
-One specific type of distribution shift is **label shift**, where the **proportion of different categories or labels changes over time**, while the relationship between features and labels remains constant. For example, in digital marketing, the popularity of different product categories may change due to trends or seasonality, but the factors that influence a customer's purchase decision within each category remain the same.
+One specific type of distribution shift is _label shift_, where the **proportion of different categories or labels changes over time**, while the relationship between features and labels remains constant. For example, in digital marketing, the popularity of different product categories may change due to trends or seasonality, but the factors that influence a customer's purchase decision within each category largely remain the same.
 
-This paper focuses on **online label shift (OLS)**, where label distributions change continually and unpredictably. OLS poses a significant challenge for digital marketers who need to adapt their strategies in real-time to capture shifting audience preferences.
+This white paper focuses on **online label shift (OLS)**, where label distributions change continually and unpredictably. OLS poses a significant challenge for marketers who need to adapt their strategies in real-time to capture shifting audience preferences.
 
 ## Understanding Online Label Shift
 
-*   **Definition**: OLS occurs when the marginal distribution of labels, Q(y), changes over time, while the conditional distribution of features given labels, Q(x|y), remains fixed. In simpler terms, the popularity of different categories changes, but the characteristics of examples within each category stay the same.
-*   **Supervised vs. Unsupervised OLS:**
-    *   **Supervised Online Label Shift (SOLS)**: Labeled data is available in real-time, and the goal is to learn classifiers from these samples while adapting to changing label proportions.
-    *   **Unsupervised Online Label Shift (UOLS)**: Only unlabeled data is available in real-time, and the goal is to adapt a learner trained on offline labeled data to changing label distributions.
-*   **Importance of Addressing OLS:**
-    *   **Improved Accuracy**: Adapting to OLS can lead to significant improvements in accuracy compared to ignoring the shift. The research indicates improvements of 1-3% in accuracy by addressing OLS.
-    *   **Better Label Marginal Estimation**: Algorithms designed for OLS can provide more accurate estimates of the true label proportions, allowing for better-informed decision-making.
-    *   **Minimax Optimal Dynamic Regret**: OLS algorithms can achieve optimal dynamic regret, which means they perform almost as well as the best possible sequence of models in hindsight.
+In technical terms, OLS occurs when the marginal distribution of labels, Q(y), changes over time, while the conditional distribution of features given labels, Q(x|y) (read: Q of x given y is true), remains fixed. In non-technical terms, the popularity of different categories changes, but the characteristics of examples within each category stay the same.
 
-## Implications for Digital Marketers
+**Importance of Addressing OLS:**
+
+*   **Improved Accuracy**: Adapting to OLS can lead to significant improvements in accuracy compared to ignoring the shift. The paper demonstrates improvements of 1-3% in accuracy by addressing OLS.
+*   **Better Label Marginal Estimation**: Algorithms designed for OLS can provide more accurate estimates of the true label proportions, allowing for better-informed decision-making without changing the input training data set.
+*   **Minimax Optimal Dynamic Regret**: OLS algorithms can achieve optimal dynamic regret, which means they perform almost as well as the best possible sequence of models in hindsight.
+
+## Implications for aiphrodite.ai's Users
 
 *   **Audience Understanding**: OLS methods provide a way to track and understand how audience preferences and behaviors evolve over time. By accurately estimating label marginals, marketers can identify emerging trends and adjust their targeting strategies accordingly.
 *   **Personalization**: By adapting to shifting label distributions, marketers can deliver more relevant and personalized experiences to their audience. For example, if the proportion of customers interested in sustainable products increases, marketers can adjust their messaging and product recommendations to reflect this shift.
-*   **Resource Allocation**: OLS algorithms can help marketers optimize resource allocation by identifying which categories or segments are growing in popularity and which are declining. This information can inform decisions about advertising spend, content creation, and product development.
-*   **Real-time Adaptation**: OLS methods are designed to work in online settings, allowing marketers to adapt their strategies in real-time as new data becomes available. This is particularly important in fast-paced digital environments where trends can change rapidly.
+*   **Budget/Resource Allocation**: OLS algorithms can help marketers optimize budget allocation by identifying which channel, categories, and/or segments are growing in popularity and which are declining. This information can inform decisions about advertising spend, content creation, and product development.
+*   **Real-time Adaptation**: OLS methods are designed for the online world, allowing marketers to adapt their strategies in real-time as new data becomes available. This is particularly important in fast-paced digital environments where trends change rapidly.
 
-## Algorithms for Online Label Shift
-
-The research paper referenced in the source document introduces novel algorithms for addressing OLS in both supervised and unsupervised settings. These algorithms offer several advantages over existing methods:
+## Advantages of Online Label Shift
 
 *   **No Convexity Assumptions**: The algorithms do not require convexity assumptions on the loss functions, making them applicable to a wider range of models, including deep neural networks and decision trees.
 *   **Optimal Dynamic Regret**: The algorithms guarantee optimal dynamic regret without requiring prior knowledge of the extent of drift in the label distribution.
 *   **Computational Efficiency**: The algorithms are computationally efficient, making them practical for real-world applications.
 *   **Adaptability**: The algorithms can be adapted to different types of data and shift scenarios, making them versatile for various digital marketing applications.
 
-The study uses online regression to estimate the sequence of online label marginals and re-weights an initial classifier. To avoid non-convexity, the process of estimating the re-weighting vectors is separated using online regression, which is computationally efficient.
-
-## Practical Implementation
-
-To implement OLS algorithms in practice, digital marketers need to:
-
-1.  **Collect Data**: Gather data on customer behavior, preferences, and interactions. This data should include features that can be used to predict labels of interest, such as demographics, purchase history, and website activity.
-2.  **Define Labels**: Identify the labels or categories that are relevant to their business goals. For example, these could be product categories, customer segments, or intent signals.
-3.  **Train Initial Model**: Train an initial classifier on offline labeled data. This model will serve as the starting point for online adaptation.
-4.  **Implement OLS Algorithm**: Implement an OLS algorithm to adapt the initial model to changing label distributions. This may involve using online regression or other techniques to track label marginals and re-weight the classifier's predictions.
-5.  **Monitor Performance**: Continuously monitor the performance of the OLS algorithm and adjust parameters as needed. This may involve tracking metrics such as accuracy, precision, and recall.
-
 ## Conclusion
 
-Online label shift poses a significant challenge for digital marketers, but also presents an opportunity to gain a deeper understanding of their online audiences. By implementing algorithms designed to address OLS, marketers can adapt their strategies in real-time to capture shifting audience preferences, deliver more personalized experiences, and optimize resource allocation. The novel algorithms discussed in the referenced research paper offer a promising approach to tackling OLS in a computationally efficient and theoretically sound manner.
+Online label shift poses a significant challenge for those understanding shifting audiences, but also presents an opportunity to gain a deeper understanding of such online audiences. By implementing algorithms designed to address OLS, marketers can adapt their strategies in real-time to capture shifting audience preferences, deliver more personalized experiences, and optimize allocation. The novel algorithms discussed in the referenced research paper offer an industry-leading approach to tackling OLS.
