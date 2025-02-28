@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import PwcLogo from '@/public/logos/work/PricewaterhouseCoopers_Logo.svg'
-import PlugAndPlayLogo from '@/public/logos/work/PlugAndPlayLogo.svg'
-import CdlLogo from '@/public/logos/work/CdlLogo.png'
-import ForumLogo from '@/public/logos/work/ForumLogo.png'
+import PwcLogo from '@/public/images/logos/work/PricewaterhouseCoopers_Logo.svg'
+import PlugAndPlayLogo from '@/public/images/logos/work/PlugAndPlayLogo.svg'
+import CdlLogo from '@/public/images/logos/work/CdlLogo.png'
+import ForumLogo from '@/public/images/logos/work/ForumLogo.png'
 
 export default function Work() {
   return (
