@@ -30,7 +30,7 @@ export default function Work() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h2 mb-4">proud to work with innovative teams</h2>
+            <h2 className="h2 mb-4">working with innovative companies</h2>
           </div>
 
           {/* Items */}

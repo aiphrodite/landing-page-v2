@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
 
 export default function Home() {
-  redirect("/docs/ols");
+  redirect("/docs/case-study-allay-lamps");
 }
