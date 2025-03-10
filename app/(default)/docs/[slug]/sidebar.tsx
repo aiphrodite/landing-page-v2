@@ -55,60 +55,12 @@ export default function Sidebar({ docs, research }: { docs: any[], research: any
           {/* Case Studies nav */}
           <nav className="space-y-8 md:block">
             <div>
-              <div className="mb-3 font-bold">Case Studies</div>
+              <div className="mb-3 font-bold">Case Studies & Docs</div>
               <ul className="space-y-2 text-sm">
                 {docs.map((doc, index) => (
                   <li key={index}>
                     <Link
                       href={`/docs/${doc.slug}`}
-                      className={`relative flex items-center text-gray-700 hover:text-gray-900 ${pathname.includes(doc.slug) ? "font-medium" : ""}`}
-                    >
-                      {doc.metadata.kind === "detailed" ? (
-                        <>
-                          <svg
-                            className={`absolute -left-5 shrink-0 fill-gray-400 ${pathname.includes(doc.slug) ? "" : "-rotate-90"}`}
-                            width="11"
-                            height="7"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="m2 .94 3.5 3.5L9 .94 10.06 2 5.5 6.56.94 2 2 .94Z" />
-                          </svg>
-                          <span>{doc.metadata.title}</span>
-                        </>
-                      ) : (
-                        doc.metadata.title
-                      )}
-                    </Link>
-                    {doc.metadata.kind === "detailed" &&
-                    pathname.includes(doc.slug) ? (
-                      <ul className="mt-2 space-y-2 pl-4">
-                        {links.map((link, linkIndex) => (
-                          <li key={linkIndex}>
-                            <a
-                              data-scrollspy-link
-                              className="text-gray-500 hover:text-gray-900"
-                              href={`#${link.id}`}
-                            >
-                              {link.innerText}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : null}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </nav>
-          {/* Research paper nav */}
-          <nav className="space-y-8 md:block">
-            <div>
-              <div className="mb-3 font-bold">Docs</div>
-              <ul className="space-y-2 text-sm">
-                {research.map((doc, index) => (
-                  <li key={index}>
-                    <Link
-                      href={`/r&d/${doc.slug}`}
                       className={`relative flex items-center text-gray-700 hover:text-gray-900 ${pathname.includes(doc.slug) ? "font-medium" : ""}`}
                     >
                       {doc.metadata.kind === "detailed" ? (
