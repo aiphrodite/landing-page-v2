@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getDocPages } from "@/components/mdx/utils";
+import { getDocPages, getResearchPages } from "@/components/mdx/utils";
 import { notFound } from "next/navigation";
 import { CustomMDX } from "@/components/mdx/mdx";
 import PageIllustration from "@/components/page-illustration";
@@ -60,7 +60,16 @@ export default async function DocumentationPage(
   const allDocs = getDocPages();
   // Sort pages by date
   allDocs.sort((a, b) => {
-    return new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
+    // return new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
+    return new Number(a.metadata.listOrder) > new Number(b.metadata.listOrder)
+      ? 1
+      : -1;
+  });
+  const allResearch = getResearchPages();
+  // Sort pages by date
+  allResearch.sort((a, b) => {
+    // return new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
+    return new Number(a.metadata.listOrder) > new Number(b.metadata.listOrder)
       ? 1
       : -1;
   });
@@ -81,7 +90,7 @@ export default async function DocumentationPage(
           {/* Main content */}
           <div className="flex justify-between pb-12 pt-32 md:pb-20 md:pt-40">
             {/* Sidebar */}
-            <Sidebar docs={allDocs} />
+            <Sidebar docs={allDocs} research={allResearch} />
 
             {/* Page container */}
             <div className="w-full grow">
