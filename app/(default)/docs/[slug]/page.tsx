@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getDocPages, getResearchPages } from "@/components/mdx/utils";
+import { getDocPages } from "@/components/mdx/utils";
 import { notFound } from "next/navigation";
 import { CustomMDX } from "@/components/mdx/mdx";
 import PageIllustration from "@/components/page-illustration";
@@ -65,14 +65,14 @@ export default async function DocumentationPage(
       ? 1
       : -1;
   });
-  const allResearch = getResearchPages();
-  // Sort pages by date
-  allResearch.sort((a, b) => {
-    // return new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
-    return new Number(a.metadata.listOrder) > new Number(b.metadata.listOrder)
-      ? 1
-      : -1;
-  });
+  // const allResearch = getResearchPages();
+  // // Sort pages by date
+  // allResearch.sort((a, b) => {
+  //   // return new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
+  //   return new Number(a.metadata.listOrder) > new Number(b.metadata.listOrder)
+  //     ? 1
+  //     : -1;
+  // });
   const post = allDocs.find((post) => post.slug === params.slug);
   const currentIndex = allDocs.findIndex((post) => post.slug === params.slug);
 
