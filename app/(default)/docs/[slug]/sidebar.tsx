@@ -103,7 +103,7 @@ export default function Sidebar({ docs, research }: { docs: any[], research: any
           {/* Research paper nav */}
           <nav className="space-y-8 md:block">
             <div>
-              <div className="mb-3 font-bold">R&D</div>
+              <div className="mb-3 font-bold">Docs</div>
               <ul className="space-y-2 text-sm">
                 {research.map((doc, index) => (
                   <li key={index}>
