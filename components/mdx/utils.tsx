@@ -60,6 +60,6 @@ export function getDocPages() {
   return getMDXData(path.join(process.cwd(), "content/docs"));
 }
 
-export function getResearchPages() {
-  return getMDXData(path.join(process.cwd(), "content/r&d"));
-}
+// export function getResearchPages() {
+//   return getMDXData(path.join(process.cwd(), "content/r&d"));
+// }
