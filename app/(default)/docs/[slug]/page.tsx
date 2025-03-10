@@ -90,7 +90,7 @@ export default async function DocumentationPage(
           {/* Main content */}
           <div className="flex justify-between pb-12 pt-32 md:pb-20 md:pt-40">
             {/* Sidebar */}
-            <Sidebar docs={allDocs} research={allResearch} />
+            <Sidebar docs={allDocs} />
 
             {/* Page container */}
             <div className="w-full grow">

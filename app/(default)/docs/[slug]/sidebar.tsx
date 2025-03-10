@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import useScrollSpy from "@/utils/useScrollspy";
 
-export default function Sidebar({ docs, research }: { docs: any[], research: any[] }) {
+export default function Sidebar({ docs }: { docs: any[] }) {
   const sidebar = useRef<HTMLDivElement>(null);
   const { sidebarOpen, setSidebarOpen } = useDocumentationProvider();
   const pathname = usePathname();
