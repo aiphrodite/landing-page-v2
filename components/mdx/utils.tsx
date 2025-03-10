@@ -5,7 +5,7 @@ type Metadata = {
   title: string;
   publishedAt: string;
   updatedAt?: string;
-  listOrder: string;
+  listOrder?: string;
   summary: string;
   author: string;
   authorImg: string;
