@@ -43,6 +43,15 @@ export default function Footer() {
                     Privacy Policy
                   </Button>
                 </Link>
+                <Link href="/ai-governance" passHref>
+                  <Button
+                    variant="flat"
+                    color="primary"
+                    className="hover:text-gray-200"
+                  >
+                    AI Governance
+                  </Button>
+                </Link>
                 <Link href="/investors" passHref>
                   <Button
                     variant="flat"
