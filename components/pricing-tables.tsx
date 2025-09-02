@@ -87,7 +87,7 @@ export default function PricingTables() {
                   </li>
                 </ul>
                 <div className="border-t border-gray-200 pt-5 mt-6">
-                  <a className="btn-sm text-white bg-aip-purple-finn hover:bg-aip-purple-royal w-full" href="https://sales.aiphrodite.ai/meetings/willsong/discover">Request a free trial</a>
+                  <a className="btn-sm text-white bg-aip-purple-finn hover:bg-aip-purple-royal w-full" href="https://calendly.com/aiphrodite/discover">Request a free trial</a>
                 </div>
               </div> */}
 
@@ -135,7 +135,7 @@ export default function PricingTables() {
                   </li>
                 </ul>
                 <div className="border-t border-gray-200 pt-5 mt-6">
-                  <a className="btn-sm text-white bg-aip-purple-finn hover:bg-aip-purple-royal w-full" href="https://sales.aiphrodite.ai/meetings/willsong/discover">Request a free trial</a>
+                  <a className="btn-sm text-white bg-aip-purple-finn hover:bg-aip-purple-royal w-full" href="https://calendly.com/aiphrodite/discover">Request a free trial</a>
                 </div>
               </div>
 
@@ -188,7 +188,7 @@ export default function PricingTables() {
                   </li>
                 </ul>
                 <div className="border-t border-gray-200 pt-5 mt-6">
-                  <a className="btn-sm text-white bg-aip-purple-finn hover:bg-aip-purple-royal w-full" href="https://sales.aiphrodite.ai/meetings/willsong/discover">Request a free trial</a>
+                  <a className="btn-sm text-white bg-aip-purple-finn hover:bg-aip-purple-royal w-full" href="https://calendly.com/aiphrodite/discover">Request a free trial</a>
                 </div>
               </div>
 
@@ -234,7 +234,7 @@ export default function PricingTables() {
                   </li>
                 </ul>
                 <div className="border-t border-gray-200 pt-5 mt-6">
-                  <a className="btn-sm text-white bg-aip-purple-finn hover:bg-aip-purple-royal w-full" href="https://sales.aiphrodite.ai/meetings/willsong/discover">Request a free trial</a>
+                  <a className="btn-sm text-white bg-aip-purple-finn hover:bg-aip-purple-royal w-full" href="https://calendly.com/aiphrodite/discover">Request a free trial</a>
                 </div>
               </div>
 
