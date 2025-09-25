@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <header className='fixed w-full z-30 bg-white'>
       <div className="flex items-center justify-center h-8 md:h-10 bg-aip-orange-bittersweet text-white">
-        <p>📣 aiphrodite selected from 1,000s of startups to <a href='https://www.pwc.co.uk/industries/technology-media-and-telecommunications/insights/scale-media.html' className='underline'>PwC Scale | AdTech! ↪</a></p>
+        <p>🕊️ Dove x aiphrodite's campaign <a href="/docs/case-study-dove" className='underline'>fitting isn't it? ↪</a></p>
       </div>
       <div className="px-5 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
