@@ -1,22 +1,17 @@
 export const metadata = {
-  title: 'aiphrodite.ai - AI-based ad testing',
+  title: 'aiphrodite.ai - test anything',
   description: 'testing ads, the smarter way',
 }
 
-import Hero from '@/components/hero-home'
-import Work from "@/components/work";
-import Features from '@/components/features-home'
-import FeaturesBlocks from '@/components/features-blocks'
-import Cta from '@/components/cta'
-
 export default function Home() {
   return (
-    <>
-      <Hero />
-      <Work />
-      <Features />
-      <FeaturesBlocks />
-      <Cta />
-    </>
+    <div
+      className="flex items-center justify-center min-h-screen"
+      style={{ backgroundColor: '#fff5f3' }}
+    >
+      <h1 className="text-3xl font-bold text-center">
+        aiphrodite.ai - test anything
+      </h1>
+    </div>
   )
 }
