@@ -32,11 +32,26 @@ const generateHeading = (headingLevel: number) => {
   };
 };
 
+const UnorderedList = ({ children }: { children: React.ReactNode }) => (
+  <ul className="list-disc pl-6 my-4">{children}</ul>
+);
+
+const OrderedList = ({ children }: { children: React.ReactNode }) => (
+  <ol className="list-decimal pl-6 my-4">{children}</ol>
+);
+
+const ListItem = ({ children }: { children: React.ReactNode }) => (
+  <li className="my-2">{children}</li>
+);
+
 const mdxComponents = {
   h1: generateHeading(1),
   h2: generateHeading(2),
   h3: generateHeading(3),
   h4: generateHeading(4),
+  ul: UnorderedList,
+  ol: OrderedList,
+  li: ListItem,
   Link: PostLink,
   Image: PostImage,
   Banner: PostBanner,

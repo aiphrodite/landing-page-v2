@@ -24,7 +24,7 @@ export default function Footer() {
               <div className="mb-2">
                 <Image src="/images/logo-full-white.svg" alt="aiphrodite logo" width={300} height={100} />
               </div>
-              <div className="">
+              <div className="flex flex-row">
                 <Link href="/terms" passHref>
                   <Button
                     variant="flat"

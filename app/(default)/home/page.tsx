@@ -13,9 +13,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Work />
+      {/* <Work />
       <Features />
-      <FeaturesBlocks />
+      <FeaturesBlocks /> */}
       <Cta />
     </>
   )

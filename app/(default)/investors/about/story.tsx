@@ -17,11 +17,11 @@ export default function AboutStory() {
               before long, under the tutilage of their professors, they were building aiphrodite.ai. inspired by previous work in the field of marketing, they saw how data crunching limited creativity and innovation. they wanted to change that and enable other creatives like themselves to focus on what they do best: create.
             </p>
             <p className="text-lg text-gray-600 mb-8">
-              after 15+ academic papers, aiphrodite.ai is ready to change the world.
+              after 20+ academic papers, aiphrodite.ai is changing the world.
             </p>
           </div>
 
-          <div className="sm:flex">
+          {/* <div className="sm:flex">
             <figure className="flex shrink-0 max-w-none sm:max-w-xs lg:max-w-none mb-8 sm:mb-0">
               <Image className="grow self-start rounded" src={MarshallProfile} width={435} height={326} alt="Dog tax" />
             </figure>
@@ -38,7 +38,7 @@ export default function AboutStory() {
               <p className="text-lg text-gray-600 mb-8">
                 c'mon it just started! built out an amazing case study and were handpicked by PwC to their Scale AdTech cohort.
               </p>
-              {/* <div className="flex  mb-8">
+              <div className="flex  mb-8">
                 <Image className="rounded-full self-start shrink-0 shadow-lg mr-4" src={AboutLogo} width={40} height={40} alt="Logo" />
                 <div>
                   <blockquote className="text-gray-600 italic">
@@ -48,9 +48,9 @@ export default function AboutStory() {
                     <cite className="text-gray-900 not-italic">Micheal Osman</cite> · <a className="text-blue-600" href="#0">New York Times</a>
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
-          </div>
+          </div> */}
 
           {/* <div className="max-w-3xl mx-auto">
             <p className="text-lg text-gray-600">
